@@ -1,5 +1,5 @@
-import pygame
-import time
+import pygame, sys, time
+
 pygame.init()
 
 #load images
@@ -40,6 +40,6 @@ if game_over == 0:
                 # checking if keydown event happened or not
             if event.type == pygame.KEYDOWN:
 
-                if event.key == pygame.K_a:
-                    print("Key A has been pressed")
+                if event.key == pygame.K_w:
+                    print("Key W has been pressed")
                     screen.blit(paddle,(300, 300))
