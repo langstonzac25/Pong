@@ -1,2 +1,3 @@
 # Pong
-Pong game writeen in python
+Pong game written in python
+
