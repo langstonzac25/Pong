@@ -1,23 +1,26 @@
+#import my modules
 import pygame, sys, time
+from pygame.locals import *
 
+#initializes pygame
 pygame.init()
 
 #load images
 paddle = pygame.image.load("Images/paddle.png")
 ball = pygame.image.load("Images/ball.png")
 
+WINDOW_SIZE = (850, 550)
 
 blue = (0, 0, 255)
-red = (255, 0, 0)
 size = (850, 550)
-screen = pygame.display.set_mode(size)
+screen = pygame.display.set_mode(WINDOW_SIZE)
+
 
 screen.fill(blue)
-pygame.draw.rect(screen, red, [0,590, 50, 640])
 pygame.display.update()
 
 
-#Load images to the screen.
+#load images to the screen.
 screen.blit(paddle,(14, 246))
 screen.blit(paddle,(812, 246))
 #paddle is 24 px wide and 58 px tall
