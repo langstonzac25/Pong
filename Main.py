@@ -17,7 +17,6 @@ pygame.draw.rect(screen, red, [0,590, 50, 640])
 pygame.display.update()
 
 
-
 #Load images to the screen.
 screen.blit(paddle,(14, 246))
 screen.blit(paddle,(812, 246))
