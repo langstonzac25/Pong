@@ -15,7 +15,7 @@ blue = (0, 0, 255)
 size = (850, 550)
 screen = pygame.display.set_mode(WINDOW_SIZE)
 
-
+#fill in the background
 screen.fill(blue)
 pygame.display.update()
 
@@ -30,6 +30,7 @@ pygame.display.update()
 
 game_over = 0
 
+#game loop
 if game_over == 0:
 
     crashed = False
@@ -46,3 +47,7 @@ if game_over == 0:
                 if event.key == pygame.K_w:
                     print("Key W has been pressed")
                     screen.blit(paddle,(300, 300))
+
+                if event.key == pygame.K_s:
+                    print("Key S has been pressed")
+                    screen.blit(paddle,(800, 300))
